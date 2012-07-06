@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res/es.androcode.viewpager.prueba"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
     <com.viewpagerindicator.TitlePageIndicator
         android:id="@+id/titulos"
-        android:layout_height="wrap_content"
         android:layout_width="fill_parent"
-        app:footerColor="#FFEE3333"
-        app:footerLineHeight="2dp"
-        app:footerIndicatorStyle="none"
-        app:textColor="#FF999999"
-        app:selectedColor="#FF3333EE"
-        app:selectedBold="false" />
+        android:layout_height="wrap_content"
+        style="@style/CustomTitlePageIndicator" />
+
     <android.support.v4.view.ViewPager
         android:id="@+id/columnas"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" />
+
 </LinearLayout>
