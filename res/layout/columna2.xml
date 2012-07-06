@@ -4,12 +4,12 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
-    <TextView 
+    <TextView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:gravity="center"
-        android:textStyle="bold"
+        android:text="C 2"
         android:textSize="100dp"
-        android:text="C 2"/>
+        android:textStyle="bold" />
 
 </LinearLayout>

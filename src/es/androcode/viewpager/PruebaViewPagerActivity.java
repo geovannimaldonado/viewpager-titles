@@ -1,7 +1,6 @@
 package es.androcode.viewpager;
 
 import com.viewpagerindicator.TitlePageIndicator;
-import com.viewpagerindicator.TitleProvider;
 
 import android.app.Activity;
 import android.content.Context;
@@ -36,7 +35,7 @@ public class PruebaViewPagerActivity extends Activity {
         titleIndicator.setViewPager(columnas);
     }
 
-    private class ColumnasAdapter extends PagerAdapter implements TitleProvider {
+    private class ColumnasAdapter extends PagerAdapter {
         
         @Override
         public int getCount() {
@@ -89,7 +88,7 @@ public class PruebaViewPagerActivity extends Activity {
         }
         
         @Override
-        public String getTitle(int position) {
+        public CharSequence getPageTitle(int position) {
             return "Columna " + (position + 1);
         }
         
